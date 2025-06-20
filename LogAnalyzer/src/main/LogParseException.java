@@ -1,8 +1,7 @@
 package main;
 
 public class LogParseException extends Exception {
-	public LogParseException(String s) {
-		// TODO Auto-generated constructor stub
+	public LogParseException(String s) {		
 		super(s);
 	}
 }
