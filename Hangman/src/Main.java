@@ -26,11 +26,12 @@ public class Main {
                 }
             }
         } catch (IOException e) {
-            System.out.println("Cant read this file: " + e.getMessage());
+            System.out.println("Cant read this file: " + e.getMessage()+
+                    "There is no words in the list! We will use another word but its not going to change in next game:(");
             return "default";
         }
         if (randomWords.isEmpty()) {
-            System.out.println("There is no words in the list! ");
+            System.out.println("There is no words in the list! We will use another word but its not going to change in next game:(");
             return "default";
         }
         Random random = new Random();
@@ -60,14 +61,13 @@ public class Main {
             for (int k = 0; k < word.length(); k++) {
                 if (letter == word.charAt(k) && underline.charAt(k) == '_') {
                     underline.setCharAt(k, letter);
-
                     correctGuess = true;
                 }
             }
             hidden = underline.toString();
             if (hidden.equals(word)) {
                 System.out.println("You guessed it good job! The word was " + word.toUpperCase());
-                break;
+                return;
             }
             if (!correctGuess) {
                 numOfTries++;
