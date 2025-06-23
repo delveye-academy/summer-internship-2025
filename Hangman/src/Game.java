@@ -56,33 +56,33 @@ public class Game {
                 System.out.println("  |  ");
                 System.out.println(" / \\");
                 System.out.println("Final guess what is the word: ");
-                break;
+                return;
             case 6:
                 System.out.println("  0  ");
                 System.out.println(" /|\\");
                 System.out.println("  |  ");
                 System.out.print(" /");
-                break;
+                return;
             case 5:
                 System.out.println("  0  ");
                 System.out.println(" /|\\");
                 System.out.println("  |  ");
-                break;
+                return;
             case 4:
                 System.out.println("  0  ");
                 System.out.println(" /|\\");
-                break;
+                return;
             case 3:
                 System.out.println("  0  ");
                 System.out.print(" /|");
-                break;
+                return;
             case 2:
                 System.out.println("  0  ");
                 System.out.print(" /");
-                break;
+                return;
             case 1:
                 System.out.println("  0  ");
-                break;
+                return;
             default:
                 break;
         }
