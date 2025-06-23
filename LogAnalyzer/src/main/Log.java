@@ -3,6 +3,7 @@ package main;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeParseException;
+import java.util.Arrays;
 
 public class Log {
 
@@ -56,8 +57,7 @@ public class Log {
 	}
 
 	public static Log fromStringArray(String[] arr) throws LogParseException {
-		if (arr.length < LogAnalyzerApp.NUM_OF_STRINGS_IN_LOG || arr[0] == null || arr[1] == null || arr[2] == null
-				|| arr[3] == null) {
+		if (arr == null || arr.length < LogAnalyzerApp.NUM_OF_ENTRIES_IN_LOG || Arrays.asList(arr).contains(null)) {
 			throw new LogParseException("Incomplete or null log entry");
 		}
 
