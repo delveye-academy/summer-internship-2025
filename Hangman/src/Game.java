@@ -2,8 +2,8 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class Game {
+    final int maxTries = 8;
     private final Scanner scan;
-
     public Game(Scanner scan) {
         this.scan = scan;
     }
@@ -13,7 +13,7 @@ public class Game {
         int numOfTries = 0;
         HashSet<Character> guessedLetters = new HashSet<>();
         System.out.println("Guess a letter of the word: ");
-        while (numOfTries < 8) {
+        while (numOfTries <= maxTries) {
             String guess = scan.nextLine();
             if (guess.length() != 1) {
                 System.out.println("Write just one letter");
@@ -55,7 +55,7 @@ public class Game {
                 System.out.println(" /|\\");
                 System.out.println("  |  ");
                 System.out.println(" / \\");
-                System.out.println("  The man has been hanged");
+                System.out.println("Final guess what is the word: ");
                 break;
             case 6:
                 System.out.println("  0  ");
@@ -89,8 +89,8 @@ public class Game {
     }
 
     private boolean outOfGuesses(int tries, String word) {
-        if (tries == 7) {
-            System.out.println("Better luck next time :(... The word was " + word.toUpperCase());
+        if (tries == maxTries) {
+            System.out.println("Man has been hanged, better luck next time :(... The word was " + word.toUpperCase());
             return true;
         }
         return false;
