@@ -1,0 +1,22 @@
+2025-06-16 14:00:00 INFO Application started
+2025-06-16 14:15:42 ERROR NullPointerException at line 52
+2025-06-16 13:55:00 ERROR Timeout while connecting
+MALFORMED LOG LINE
+2021 1 1 13:00:00 STATUS Testing
+2024-03-01 09:23:11 INFO System boot completed
+2024-03-01 09:24:05 WARN CPU temperature high
+2024-03-01 09:25:47 ERROR Failed to connect to database
+2024-03-01 09:26:19 INFO User login successful
+2024-03-01 09:27:03 INFO Scheduled backup started
+2024-03-01 09:28:55 ERROR Timeout while reading file /data/input.csv
+2024-03-01 09:29:31 WARN Memory usage exceeded 80%
+2024-03-01 09:30:12 INFO Heartbeat check passed
+2024-03-01 09:31:44 ERROR NullPointerException in LogParser
+2024-03-01 09:32:50 INFO Log rotation completed
+2024-03-01 09:33:16 WARN Disk usage at 95%
+2024-03-01 09:34:22 INFO Maintenance mode enabled
+2024-03-01 09:35:00 ERROR Failed to authenticate API request
+2024-03-01 09:35:37 INFO Shutdown signal received
+2024-03-01 09:36:18 ERROR Unrecognized config option 'maxThreads'
+null
+null null null null
